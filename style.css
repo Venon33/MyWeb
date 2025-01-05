@@ -1,0 +1,448 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos para el apartado de Contacto */
+#contacto {
+    padding: 40px 20px;
+    background-color: #f8f8f8;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+/* Título de Contacto centrado */
+#contacto h2 {
+    font-size: 48px;
+    color: #000000;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+/* Contenedor principal */
+.contacto-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+/* Bloque de la izquierda (WhatsApp, Correo y Teléfono) */
+.informacion-contacto-izquierda {
+    flex: 1;
+    margin-right: 20px;
+    text-align: left; /* Alinear el contenido de la izquierda */
+}
+
+/* Bloque del centro (Horario y Dirección) */
+.informacion-contacto-centro {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Bloque del logo a la derecha */
+.logo {
+    flex: 0 0 auto;  /* El logo no se estira ni se encoje */
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Estilo de la imagen del logo */
+.logo img {
+    width: 200px;  /* Tamaño más grande para el logo */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Asegura que no se exceda del espacio disponible */
+    margin-bottom: 25px; /* Espacio debajo del logo */
+}
+
+/* Nombre debajo del logo */
+.logo-nombre {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center; /* Asegura que el nombre se centre con el logo */
+}
+
+/* Estilo para los elementos de contacto */
+.info-item {
+    margin-bottom: 20px;
+}
+
+.info-item h3 {
+    font-size: 24px;  /* Tamaño del título de cada sección */
+    color: #333;  /* Color del título */
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-size: 18px;  /* Tamaño del texto */
+    color: #555;  /* Color del texto */
+    display: flex;
+    align-items: center;
+}
+
+/* Estilo para los iconos */
+#contacto i {
+    margin-right: 8px;
+    font-size: 1.5em;  /* Tamaño más grande para los iconos */
+    vertical-align: middle;
+}
+
+/* Estilo para el enlace de WhatsApp */
+#contacto .fab.fa-whatsapp {
+    color: #25D366; /* Verde característico de WhatsApp */
+}
+
+/* Estilo para el enlace de Correo */
+#contacto .fas.fa-envelope {
+    color: #D44638; /* Color característico de correo electrónico */
+}
+
+/* Estilo para el enlace de Teléfono */
+#contacto .fas.fa-phone-alt {
+    color: #0fceae; /* Color para el teléfono */
+}
+
+/* Estilo para los párrafos dentro de contacto */
+#contacto p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+/* Información de contacto organizada */
+.informacion-contacto-centro {
+    flex: 1;
+    text-align: left;
+    margin-right: 20px;
+}
+
+.informacion-contacto-centro .info-item {
+    margin-bottom: 20px;
+}
+
+/* Información adicional (Horario y Dirección) */
+.info-item {
+    width: 100%;  
+}
+
+.info-item h3 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.info-item p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Logo de la empresa alineado a la derecha */
+#contacto .logo {
+    flex: 1;
+    text-align: center;  /* Centrado del logo */
+    margin-top: 20px;
+}
+
+#contacto .logo img {
+    width: 200px;  /* Tamaño más grande para el logo */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    max-width: 100%; /* Asegura que no se exceda del espacio disponible */
+    margin-bottom: 15px; /* Espacio debajo del logo */
+}
+
+/* Estilos para los iconos */
+#contacto i {
+    margin-right: 8px;
+    font-size: 1.2em;
+    vertical-align: middle;
+}
+
+
+/* Estilo para el enlace de WhatsApp */
+#contacto .fab.fa-whatsapp {
+    color: #25D366; /* Verde característico de WhatsApp */
+}
+
+/* Estilo para el enlace de Correo */
+#contacto .fas.fa-envelope {
+    color: #D44638; /* Color característico de correo electrónico */
+}
+
+
+/* Estilo para la cabecera */
+header {
+    background-image: url('IMG-20250104-WA0005.jpg'); /* Ruta al logo de la empresa */
+    background-size: cover; /* Ajusta el tamaño de la imagen para que se vea bien */
+    background-repeat: no-repeat; /* No repetir la imagen */
+    background-position: center; /* Centra la imagen en la cabecera */
+    height: 650px; /* Ajusta la altura de la cabecera según lo necesario */
+    text-align: center; /* Centra el texto */
+    color: white; /* Color de texto (puedes cambiarlo según el fondo) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Estilos para la sección de bienvenida */
+#bienvenida {
+    padding: 40px 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilo para el título (Bienvenidos Abogados Maria Lara Molina) */
+#bienvenida h2 {
+    font-size: 56px;  /* Cambia el tamaño de la fuente */
+    color: #050505;  /* Cambia el color del texto */
+    text-align: center;  /* Centra el título */
+    margin-bottom: 30px;  /* Espacio debajo del título */
+}
+
+/* Estilo para el párrafo */
+#bienvenida p {
+    font-size: 20px;  /* Cambia el tamaño del texto */
+    color: #000000b7;  /* Cambia el color del texto */
+    text-align: center;  /* Centra el párrafo */
+    line-height: 1.6;  /* Espaciado entre líneas */
+}
+
+/* Header */
+header {
+    background-color: #fffbfb;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#logo {
+    width: 100px;
+    height: auto;
+}
+
+/* Navbar */
+nav {
+    background-color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+/* Fondo de imagen y estilo general para los servicios */
+
+.servicio {
+    background-size: cover;  /* Esto hace que la imagen cubra todo el contenedor */
+    background-position: center;  /* Mantener la imagen centrada */
+    background-repeat: no-repeat;  /* Evitar que la imagen se repita */
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    height: 200px;  /* Definir un alto para el contenedor para que la imagen se vea más grande */
+}
+
+#servicio1 {
+    background-image: url('derecho matrimonial.jpg');
+}
+
+#servicio2 {
+    background-image: url('herencia y testamento.jpeg');
+}
+
+#servicio3 {
+    background-image: url('derecho laboral1.jpeg');
+}
+
+#servicio4 {
+    background-image: url('derecho penal.jpg');
+}
+
+/* Estilo para la sección de Servicios */
+#servicios {
+    padding: 40px 20px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Estilo para el título de la sección de Servicios */
+#servicios h2 {
+    font-size: 48px;  /* Ajusta el tamaño del título */
+    color: #0066cc;   /* Cambia el color del texto */
+    text-align: center;  /* Centra el título */
+    margin-bottom: 30px; /* Espacio debajo del título */
+    text-transform: uppercase; /* Para hacer el título en mayúsculas */
+    font-weight: bold; /* Para darle un estilo más fuerte */
+}
+
+/* Fondo de imagen y estilo general para los servicios */
+.servicio {
+    background-size: cover;  /* La imagen cubre todo el contenedor */
+    background-position: center;  /* Mantener la imagen centrada */
+    background-repeat: no-repeat;  /* Evitar que la imagen se repita */
+    padding: 20px;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 2px black;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    height: 250px;  /* Cambia el alto para los servicios */
+}
+
+/* Estilos específicos para cada servicio */
+#servicio1 {
+    background-image: url('derecho matrimonial.jpg');
+    background-size: center;  /* La imagen cubrirá todo el espacio del contenedor */
+    background-position: center;  /* Mantener la imagen centrada */
+    background-repeat: no-repeat;
+    height: 300px;  /* Cambia la altura para el servicio 1*/
+}
+
+#servicio2 {
+    background-image: url('Herencias y testamento 2.jpg');
+    background-size: center;  /* La imagen cubrirá todo el espacio del contenedor */
+    background-position: center;  /* Mantener la imagen centrada */
+    background-repeat: no-repeat;
+    height: 300px;  /* Cambia la altura para el servicio 2 */
+}
+
+#servicio3 {
+    background-image: url('derecho laboral 3.jpeg');
+    background-size: center;  /* La imagen cubrirá todo el espacio del contenedor */
+    background-position: center;  /* Mantener la imagen centrada */
+    background-repeat: no-repeat;
+    height: 300px;  /* Cambia la altura para el servicio 3 */
+}
+
+#servicio4 {
+    background-image: url('derecho penal.jpg');
+    background-size: center;  /* La imagen cubrirá todo el espacio del contenedor */
+    background-position: center;  /* Mantener la imagen centrada */
+    background-repeat: no-repeat;
+    height: 300px;  /* Cambia la altura para el servicio 4 */
+}
+
+/* Estilo para los servicios dentro de la sección */
+.servicio h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: white;
+}
+
+/* Estilo para el título de la sección de Servicios */
+#servicios h2 {
+    font-size: 48px;  /* Ajusta el tamaño del título */
+    color: #000000;   /* Cambia el color del texto */
+    text-align: center;  /* Centra el título */
+    margin-bottom: 30px; /* Espacio debajo del título */
+    text-transform: uppercase; /* Para hacer el título en mayúsculas */
+    font-weight: bold; /* Para darle un estilo más fuerte */
+}
+
+/* Secciones */
+section {
+    padding: 40px 20px;
+    margin: 20px 0;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    font-size: 36px;  /* Agrandamos el tamaño del título */
+    margin-bottom: 20px;
+    text-align: center; /* Centramos el texto */
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.servicio {
+    flex: 1;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.servicio h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .servicios-container {
+        flex-direction: column;
+    }
+}
+

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Información Laboral | Empresa XYZ</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Incluir Font Awesome para los iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div id="header-container">
+            <!-- <img src="" alt="Logo de Empresa" id="logo"> -->
+            <h1></h1>
+            <p></p>
+        </div>
+    </header>
+
+    <!-- Navigation Menu -->
+    <nav>
+        <ul>
+            <!-- Los enlaces de navegación han sido comentados. Puedes activarlos si es necesario -->
+            <!-- <li><a href="#bienvenida">Bienvenida</a></li> -->
+            <!-- <li><a href="#servicios">Servicios</a></li> -->
+            <!-- <li><a href="#documentacion">Documentación</a></li> -->
+            <!-- <li><a href="#contacto">Contacto</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- Welcome Section -->
+    <section id="bienvenida">
+        <h2>Bienvenidos Abogados Maria Lara Molina</h2>
+        <p>En Abogados Maria Lara Molina nos dedicamos a ofrecer soluciones legales. Estoy altamente cualificada en diversas áreas, lo que me permite cubrir todas tus necesidades.</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios">
+        <h2>Servicios</h2>
+        <div class="servicios-container">
+            <div class="servicio" id="servicio1">
+                <h3>Divorcios y Familia</h3>
+                <p></p>
+            </div>
+            <div class="servicio" id="servicio2">
+                <h3>Herencias y Sucesiones</h3>
+                <p></p>
+            </div>
+            <div class="servicio" id="servicio3">
+                <h3>Derecho Laboral</h3>
+                <p></p>
+            </div>
+            <div class="servicio" id="servicio4">
+                <h3>Derecho Penal</h3>
+                <p></p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Documentation Section -->
+    <section id="documentacion">
+        <h2>Documentación Corporativa</h2>
+        <p>Conoce más sobre nuestra empresa a través de los siguientes documentos:</p>
+        <ul>
+            <li><a href="documentos/mision.pdf" target="_blank">Misión</a></li>
+            <li><a href="documentos/vision.pdf" target="_blank">Visión</a></li>
+            <li><a href="documentos/valores.pdf" target="_blank">Valores</a></li>
+            <li><a href="documentos/estrategia.pdf" target="_blank">Estrategia Corporativa</a></li>
+        </ul>
+    </section>
+
+    <!-- Contact Section -->
+<section id="contacto">
+    <h2>Contacto</h2>
+
+    <div class="contacto-contenedor">
+        <!-- Información de contacto a la izquierda -->
+        <div class="informacion-contacto-izquierda">
+            <div class="info-item">
+                <h3 class="titulo-item">WhatsApp</h3>
+                <p><a href="https://wa.me/+34747444017" target="_blank"><i class="fab fa-whatsapp"></i>Chatea con nosotros</a></p>
+            </div>
+            <div class="info-item">
+                <h3 class="titulo-item">Correo electrónico</h3>
+                <p><a href="mailto:m.lara.abogada@gmail.com"><i class="fas fa-envelope"></i>m.lara.abogada@gmail.com</a></p>
+            </div>
+              <!-- Nuevo apartado para el teléfono de contacto -->
+              <div class="info-item">
+                <h3>Teléfono</h3>
+                <p><a href="tel:+34747444017"><i class="fas fa-phone-alt"></i>Llámanos (+34) 747 44 40 17</a></p>
+            </div>
+        </div>
+
+        <!-- Información central (Horario y Dirección) -->
+        <div class="informacion-contacto-centro">
+            <div class="info-item">
+                <h3 class="titulo-item">Horario Laboral</h3>
+                <p>Lunes a Jueves: 10:00 - 14:00 / 17:00 - 21:00</p>
+                <p>Viernes: 10:00 - 15:00</p>
+                <p>Sabado y Domingo CERRADO</p>
+            </div>
+            <div class="info-item">
+                <h3 class="titulo-item">Dirección</h3>
+                <p>C/ Muelle 4 1ºC Puertollano (Ciudad Real)</p>
+            </div>
+        </div>
+
+        <!-- Logo de la empresa -->
+        <div class="logo">
+            <img src="IMG-20241215-WA0009.png" alt="Logo de la empresa">
+            <p class="logo-nombre"></p>  <!-- Nombre debajo del logo -->
+        </div>
+    </div>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2025 Empresa Abogada Maria Lara Molina | Todos los derechos reservados.</p>
+        <p>Visitas: <span id="contador">0</span></p>
+    </footer>
+
+    <script>
+        // Cargar el contador de visitas desde el backend
+        fetch('/contador')
+            .then(response => response.json())
+            .then(data => {
+                document.getElementById('contador').textContent = data.visitas;
+            });
+    </script>
+</body>
+</html>
